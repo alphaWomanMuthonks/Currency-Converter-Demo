@@ -29,4 +29,5 @@ This is a simple web application that captures user input through a form and dis
     The form will clear after submission, allowing for new entries.
     Contribution
     Feel free to fork the repository and make your contributions.
-   If you have suggestions for improvements or features, please create an issue or a pull request.
+## Contribution
+   Feel free to fork the repository and make your contributions. If you have suggestions for improvements or features, please create an issue or a pull request.
