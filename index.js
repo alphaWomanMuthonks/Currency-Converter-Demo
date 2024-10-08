@@ -6,10 +6,21 @@ function getUserInput() {
     return { name, email, message };
 }
 
-    
 // Function to validate user input
 function validateInput(name, email, message) {
     return name.length > 0 && email.includes('@') && message.length > 0;
+}
+
+// Function to display user input in the output section
+function displayOutput(userData) {
+    document.getElementById('displayName').textContent = `Name: ${userData.name}`;
+    document.getElementById('displayEmail').textContent = `Email: ${userData.email}`;
+    document.getElementById('displayMessage').textContent = `Message: ${userData.message}`;
+}
+
+// Function to clear the form after submission
+function clearForm() {
+    document.getElementById('userForm').reset();
 }
 
 // Event listener for form submission
@@ -24,12 +35,8 @@ document.getElementById('userForm').addEventListener('submit', function(event) {
         return; // Exit if validation fails
     }
 
-// Function to display user input in the output section
-function displayOutput(userData) {
-    document.getElementById('displayName').textContent = `Name: ${userData.name}`;
-    document.getElementById('displayEmail').textContent = `Email: ${userData.email}`;
-    document.getElementById('displayMessage').textContent = `Message: ${userData.message}`;
-}
-    // Show the output div
-    document.getElementById('output').style.display = 'block';
+    displayOutput({ name, email, message }); // Display the output
+    clearForm(); // Clear the form fields
+    document.getElementById('output').style.display = 'block'; // Show the output section
+    document.getElementById('output').style.backgroundColor = '#e0f7fa'; // Change background color
 });
