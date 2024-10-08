@@ -16,6 +16,11 @@ function validateInput(name, email, message) {
 function clearForm() {
     document.getElementById('userForm').reset();
 }
+
+// Event listener for form submission
+document.getElementById('userForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
 // Function to display user input in the output section
 function displayOutput(userData) {
     document.getElementById('displayName').textContent = `Name: ${userData.name}`;
