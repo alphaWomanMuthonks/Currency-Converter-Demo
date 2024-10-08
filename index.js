@@ -1,5 +1,11 @@
-document.getElementById('userForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission
+// Function to capture user input from the form
+function getUserInput() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    return { name, email, message };
+}
+
     
 // Function to validate user input
 function validateInput(name, email, message) {
