@@ -12,6 +12,10 @@ function validateInput(name, email, message) {
     return name.length > 0 && email.includes('@') && message.length > 0;
 }
 
+// Function to clear the form after submission
+function clearForm() {
+    document.getElementById('userForm').reset();
+}
 // Function to display user input in the output section
 function displayOutput(userData) {
     document.getElementById('displayName').textContent = `Name: ${userData.name}`;
