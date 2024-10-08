@@ -18,7 +18,7 @@ This is a simple web application that captures user input through a form and dis
 
 1. **Clone the Repository** (or download the ZIP file):
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/alphaWomanMuthonks/User-Input-Form-Demo
 2. Navigate to the Project Folder:
 3. Open the index.html File:
    > Open the index.html file in your preferred web browser to view and interact with the application.
