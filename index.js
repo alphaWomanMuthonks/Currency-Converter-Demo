@@ -12,15 +12,18 @@ function validateInput(name, email, message) {
     return name.length > 0 && email.includes('@') && message.length > 0;
 }
 
-// Function to clear the form after submission
-function clearForm() {
-    document.getElementById('userForm').reset();
-}
-
 // Event listener for form submission
 document.getElementById('userForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
+    event.preventDefault(); // Prevent form submission
+
+    const { name, email, message } = getUserInput(); // Capture input
+
+    // Validate input and provide feedback
+    if (!validateInput(name, email, message)) {
+        alert('Please fill in all fields correctly.');
+        return; // Exit if validation fails
+    }
+
 // Function to display user input in the output section
 function displayOutput(userData) {
     document.getElementById('displayName').textContent = `Name: ${userData.name}`;
