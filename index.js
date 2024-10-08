@@ -1,10 +1,10 @@
 document.getElementById('userForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission
     
-    // Function to capture user input from the form
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+// Function to validate user input
+function validateInput(name, email, message) {
+    return name.length > 0 && email.includes('@') && message.length > 0;
+}
 
 // Function to display user input in the output section
 function displayOutput(userData) {
