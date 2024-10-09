@@ -21,8 +21,8 @@ This is a simple web application that captures user input through a form and dis
    git clone https://github.com/alphaWomanMuthonks/User-Input-Form-Demo
 2. Navigate to the Project Folder:
 3. Open the index.html File:
-   > Open the index.html file in your preferred web browser to view and interact with the application.
-4 .Usage
+   > Open the index.html file in your preferred web browser to view and interact with the application. in Vs Terminal run xdg-open index.html
+4. Usage
     Fill in the form fields (Name, Email, and Message).
     Click the Submit button.
     The submitted data will be displayed below the form.
